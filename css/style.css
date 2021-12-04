@@ -14,6 +14,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 30px;
+    text-align: left;
+}
+
 p, li {
     font-size: 16px;
     line-height: 2;
@@ -44,16 +49,16 @@ footer {
     color: #D3D7D5;
 }
 
-table, th, td {
+/*table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-}
+}*/
 
-tbody tr:nth-child(odd) {
+#education tr:nth-child(odd) {
     background-color: #CAC5C0;
 }
 
-tbody tr:nth-child(even) {
+#education tr:nth-child(even) {
     background-color: #CCD1D3;
 }
 
@@ -62,8 +67,14 @@ table.center {
     margin-right: auto;
 }
 
+form {
+    padding-left: 160px;
+    /*margin: auto;*/
+}
+
 #wrapper {
     max-width: 960px;
+    min-height: 810px;
     margin: auto;
     padding: 0 30px 30px 30px;
     background-color: #CCD1D3;
@@ -72,7 +83,6 @@ table.center {
 
 #main_info {
     max-width: 960px;
-    max-height: 300px;
 }
 
 #ava {
@@ -81,7 +91,6 @@ table.center {
     margin-right: 40px;
     float: left;
     border-radius: 7px;
-
 }
 
 #about_me {
@@ -94,4 +103,37 @@ table.center {
 
 #footer_link {
     color: #CCD1D3;
+}
+
+#calculate {
+    display: inline-block;
+    float: right;
+    border-radius: 7px;
+}
+
+#calculate:hover {
+    opacity: 0.75;
+    background-color: #2B5A46;
+}
+
+#response {
+    display: inline-block;
+    padding: 0px 30px 30px 160px;
+}
+
+#result {
+    display: inline-block;
+    padding: 0px 30px 30px 100px;
+}
+
+.evenColor {
+    background: #CAC5C0;
+}
+
+.unevenColor {
+    background: #CCD1D3;
+}
+
+.shadow {
+    display: none;
 }

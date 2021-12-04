@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Калькулятор </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="wrapper">
+
+    <header>
+        <h1> Калькулятор квадратных уравнений </h1>
+    </header>
+
+    <div id="main_info">
+        <form action="index.html" method="post">
+            <input type="number" id="a" placeholder="a"> x<sup>2</sup> +
+            <input type="number" id="b" placeholder="b"> x +
+            <input type="number" id="c" placeholder="c"> = 0;
+            <br><br><input type="button" id="calculate" value="Вычислить" onclick="send();">
+        </form>
+
+    </div>
+
+
+    <div id="response" class="shadow">
+        <br>
+        <h3>Результат:</h3>
+        <h5 id="solutionResult"></h5>
+        <h4>История решений: </h4>
+        <table id="result">
+            <tr class="firstLine">
+                <th>№</th>
+                <th>Корни уравнения</th>
+                <th>Дискриминант</th>
+            </tr>
+            <tbody id="t">
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../script/QuadraticEquationCalculator.js"></script>
+    </div>
+</div>
+
+<footer>
+    <h4> Author: Chernyshov Nikita<br>
+        <a id="footer_link" href="mailto:chernyllexs@mail.ru">Chernyllexs@mail.ru</a></h4>
+</footer>
+</body>
+</html>
