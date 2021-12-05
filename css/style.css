@@ -106,8 +106,6 @@ form {
 }
 
 #calculate {
-    display: inline-block;
-    float: right;
     border-radius: 7px;
 }
 
@@ -122,6 +120,7 @@ form {
 }
 
 #result {
+    text-align: center;
     display: inline-block;
     padding: 0px 30px 30px 100px;
 }
